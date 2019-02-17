@@ -12,5 +12,9 @@ package oshoppingproject;
  */
 public class detail {
     String quantity;
+    public void setquantity(String quantity )
+    {
+        this.quantity=quantity;
+    }
     
 }

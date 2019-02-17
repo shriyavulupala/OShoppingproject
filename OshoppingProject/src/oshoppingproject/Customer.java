@@ -9,7 +9,29 @@ package oshoppingproject;
  *
  * @author 1895730
  */
-public class Customer {
-    int custid;
-    String paymethod;
+public class Customer extends Person {
+  private  int custid;
+    private String paymethod;
+    public void setcustid(int custid,String paymethod)
+    {
+        this.custid=custid;
+        this.paymethod=paymethod;
+    }
+    public void setcustid(int custid)
+    {
+        this.custid=custid;
+    }
+    public void setpaymethod(String paymethod)
+    {
+        this.paymethod=paymethod;
+    }
+    public int getcustid()
+    {
+        return custid;
+       
+    }
+    public String getpaymethod()
+    {
+        return paymethod;
+    }
 }

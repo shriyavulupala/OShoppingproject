@@ -13,5 +13,11 @@ public class Brand {
     String name;
     String id;
     String description;
+    public void setname(String name, String id,String description)
+    {
+      this.name = name;
+      this.id=id;
+      this.description=description;
+    }
     
 }
