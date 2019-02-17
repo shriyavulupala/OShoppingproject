@@ -46,11 +46,7 @@ public class Order {
     {
         return amount;
     }
-      public void confirm()
-    {
-        System.out.println("Date is: "+date+"\npaydetails"+paymethod);
-    }
-
+      
      public static Date parseDate(String date) {
      try {
          return new SimpleDateFormat("yyyy-MM-dd").parse(date);
