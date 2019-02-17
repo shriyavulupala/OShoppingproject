@@ -15,4 +15,59 @@ public class Item
     String name, color;
     float price;
     
+    public void setName(String n)
+    {
+        this.name=n;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    
+    public void setColor(String c)
+    {
+        this.color=c;
+    }
+    public String getColor()
+    {
+        return color;
+    }
+    
+    public void setId(int ID)
+    {
+        this.id=ID;
+    }
+    public int getID()
+    {
+     return id;   
+    }
+    
+    public void setSize(int s)
+    {
+        this.size=s;
+    }
+    public int getSize()
+    {
+     return size;   
+    }
+    
+    public void setQuantity(int q)
+    {
+        this.quantity=q;
+    }
+    public int getQuantity()
+    {
+     return quantity;   
+    }
+    
+    public void setPrice(float p)
+    {
+        this.price=p;
+    }
+    public float getPrice()
+    {
+     return price;   
+    }
+    
+    
 }
