@@ -9,7 +9,7 @@ package oshoppingproject;
  *
  * @author 1894475
  */
-public class Person
+public class Person 
 {
     String Lname, Fname,address;
     int phone;
