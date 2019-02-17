@@ -30,7 +30,8 @@ public class Brand {
         return name;
     }
 
-    void setName(String coffee_Maker) {
+    void setName(String Coffee_Maker) {
+        
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
