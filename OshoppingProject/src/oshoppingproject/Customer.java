@@ -9,7 +9,7 @@ package oshoppingproject;
  *
  * @author 1895730
  */
-public class Customer {
+public class Customer extends Person{
     int custid;
     String paymethod;
 }
