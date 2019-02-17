@@ -16,6 +16,11 @@ public class OshoppingProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Brand b = new Brand();
+        b.setName("Coffee Maker");
+        b.setid("10f0D");
+        b.setDescription("Instant coffee maker");
+       b.display();
     }
     
 }
