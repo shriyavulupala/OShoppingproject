@@ -9,9 +9,59 @@ package oshoppingproject;
  *
  * @author 1894475
  */
-public class Person 
+public class Person  
 {
     String Lname, Fname,address;
     int phone;
+
+    public void setFname(String Fname)
+    {
+        
+        this.Fname = Fname;
+        
+    }
+    
+    
+    public void setLname(String Fname)
+    {
+        
+        this.Lname = Lname;
+        
+    }
+    
+    
+    public void setAddress(String address)
+    {
+        
+        this.address = address;
+        
+    }
+    
+    public String getAddress()
+    {
+        return address;
+     }
+    
+    
+    public String getFname()
+    {
+        return Fname;
+     }
+    
+    
+    public String getLname()
+    {
+        return Lname;
+     }
+    
+    public void setPhone(int P)
+    {
+        this.phone = P;
+    }
+    
+    public int getPhone()
+    {
+        return phone;
+    }
     
 }
