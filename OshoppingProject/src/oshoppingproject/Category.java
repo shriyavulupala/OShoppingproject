@@ -40,7 +40,10 @@ public class Category
     {
      return id;   
     }
-    
+     public void display()
+    {
+    System.out.println("Name: "+name+"\n ID: "+id+"\n Description: "+description);
+    }
     
     
 }
