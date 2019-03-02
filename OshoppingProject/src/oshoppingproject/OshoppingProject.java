@@ -21,7 +21,7 @@ public class OshoppingProject {
         Brand b = new Brand();
         Customer cu=new Customer(145,"dsf","ygygh");
         Item i= new Item(23,40,4,"Kurta","Pink","game",10f);
-        
+            Category c= new Category(23, "clothing", "newfashion");
          Date dt=new Date();
         String d=dt.toString();
         String id=generateid(d,cu.paymethod, cu.getID());
@@ -36,6 +36,7 @@ public class OshoppingProject {
        b.display();
      p.display();
      i.display();
+     c.display();
     }
  
 
