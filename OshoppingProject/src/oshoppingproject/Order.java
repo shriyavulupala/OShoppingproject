@@ -55,4 +55,8 @@ public class Order {
          return null;
      }
      }
+     public void display()
+    {
+    System.out.println("Payment: " +paymethod +"\n Amount: "+amount);
+    }
 }

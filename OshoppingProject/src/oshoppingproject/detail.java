@@ -16,5 +16,12 @@ public class detail {
     {
         this.quantity=quantity;
     }
-    
+    public String getquantity(){
+        return quantity;
+        
+    }
+             
+    public void display(){
+        System.out.println("quantity detail: "+ quantity);
+    }
 }
