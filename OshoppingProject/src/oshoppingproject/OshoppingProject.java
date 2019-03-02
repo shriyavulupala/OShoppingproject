@@ -17,11 +17,12 @@ public class OshoppingProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Person p = new Person("pavani", "movva", "cotesaintecatherine","4100");
+        Person p = new Person("pavani", "movva", "cotesaintecatherine","P");
         Brand b = new Brand("Biba", "B","Cotton");
         Customer cu=new Customer(145,"dsf","ygygh");
-        Item i= new Item(23,40,4,"Kurta","Pink","game",10f);
+        Item i= new Item(23,40,4,"Kurta","Pink",800f);
             Category c= new Category(23, "clothing", "newfashion");
+            Order o= new Order(800f,"Credit card","O");
          Date dt=new Date();
         String d=dt.toString();
         String id=generateid(d,cu.paymethod, cu.getID());
@@ -29,11 +30,11 @@ public class OshoppingProject {
         
         
         System.out.println(id);
-      
+       p.display();
+       i.display();
        b.display();
-     p.display();
-     i.display();
-     c.display();
+       c.display();
+       o.display();
     }
  
 
