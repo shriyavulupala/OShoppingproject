@@ -81,5 +81,9 @@ public class Item
     {
     System.out.println("Item ID: "+id+"\n Item size: "+size +"\n Item Quantity: "+quantity + "\n Item Name: " +name + "\n color:" +color+ "\n Price:" +price);
     }
+      public static String Item(int id,int size, int quantity, String name,String color , float price)
+     {
+         return id +" "+ size+" "+ quantity+" "+ name+" "+color+" "+ price+" ";
  
+}
 }
