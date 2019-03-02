@@ -17,8 +17,8 @@ public class OshoppingProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Person p = new Person("pavani", "movva", "address","ID");
-        Brand b = new Brand();
+        Person p = new Person("pavani", "movva", "cotesaintecatherine","4100");
+        Brand b = new Brand("Biba", "B","Cotton");
         Customer cu=new Customer(145,"dsf","ygygh");
         Item i= new Item(23,40,4,"Kurta","Pink","game",10f);
             Category c= new Category(23, "clothing", "newfashion");
@@ -29,10 +29,7 @@ public class OshoppingProject {
         
         
         System.out.println(id);
-        b.setName("Coffee Maker");
-        b.setid("10f0D");
-        
-        b.setDescription("Instant coffee maker");
+      
        b.display();
      p.display();
      i.display();
