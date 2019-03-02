@@ -87,7 +87,10 @@ public class Person
     {
     System.out.println("LastName: " +Lname + "\n FirstName: " +Fname + "\n Address: " +address);
     }
-
+public static String Persontest(String Lname,String Fname, String address, String ID)
+{
+    return Lname+" "+Fname+" "+address+" "+ID;
+}
     /**
      * @return the ID
      */
