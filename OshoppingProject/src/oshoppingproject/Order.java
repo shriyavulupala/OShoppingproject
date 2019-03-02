@@ -16,11 +16,13 @@ import java.util.Date;
 public class Order {
     String paymethod;
     float amount;
+    private String ID;
     Date date = parseDate("2019-02-17");
-    public Order(String paymethod,float amount)
+    public Order(String paymethod,float amount, String ID)
     {
         this.paymethod=paymethod;
         this.amount=amount;
+        this.ID=ID;
     }
     public void setDate(Date d)
     {
@@ -58,5 +60,19 @@ public class Order {
      public void display()
     {
     System.out.println("Payment: " +paymethod +"\n Amount: "+amount);
+    }
+
+    /**
+     * @return the ID
+     */
+    public String getID() {
+        return ID;
+    }
+
+    /**
+     * @param ID the ID to set
+     */
+    public void setID(String ID) {
+        this.ID = ID;
     }
 }
