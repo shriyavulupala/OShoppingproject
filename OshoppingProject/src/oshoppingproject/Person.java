@@ -13,12 +13,14 @@ public class Person
 {
     String Lname, Fname,address;
     int phone;
+    private String ID;
     
-    public Person(String Lname, String Fname, String address)
+    public Person(String Lname, String Fname, String address, String ID)
     {
         this.Lname=Lname;
         this.Fname=Fname;
         this.address=address;
+        this.ID=ID;
         
     }
 
@@ -28,7 +30,8 @@ public class Person
         this.Fname = Fname;
         
     }
-    
+  
+            
     
     public void setLname(String Fname)
     {
@@ -71,5 +74,22 @@ public class Person
     {
         return phone;
     }
+     public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
     
+
+ public void display()
+    {
+    System.out.println("LastName: " +Lname + "\n FirstName: " +Fname + "\n Address: " +address);
+    }
+
+    /**
+     * @return the ID
+     */
+   
 }

@@ -13,12 +13,14 @@ public class Provider extends Person
 {
     int companynumber;
     String companyname;
+    private String ID;
     
-    public Provider(int c, String cname)
+    public Provider(int c, String cname,String ID)
     {
          super("pavani", "movva", "address");
         this.companyname = cname;
         this.companynumber = c;
+        this.ID=ID;
     }
     
     public void setCompanynumber(int cnumber)
@@ -40,5 +42,18 @@ public class Provider extends Person
     {
         return companyname;
     }
-    
+
+
+    public String getID() {
+        return ID;
+    }
+
+   
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+    public void display()
+    {
+        System.out.println("company number: \n" +companynumber + "company name: \n" +companyname + "ID is:" +ID);
+    }
 }
