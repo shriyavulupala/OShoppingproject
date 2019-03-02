@@ -17,9 +17,9 @@ public class Customer extends Person {
     private String ID;
     
    
-    public Customer(int custid,String paymethod,String ID)
+    public  Customer(int custid,String paymethod,String ID)
     {
-        super("pavani", "movva", "address","ID");
+       super("pavani", "movva", "address","ID");
         this.custid=custid;
         this.paymethod=paymethod;
         this.ID=ID;
@@ -56,7 +56,11 @@ public class Customer extends Person {
     {
     System.out.println("Customer ID: "+custid+"\n Payment: "+paymethod);
     }
-
+public static String Customer(int custid, String paymethod, String ID)
+{
+    
+    return custid+" "+paymethod+" "+ID;
+}
     /**
      * @return the ID
      */
