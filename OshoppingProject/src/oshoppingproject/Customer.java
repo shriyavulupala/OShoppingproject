@@ -12,15 +12,18 @@ package oshoppingproject;
 public class Customer extends Person {
     
    
-  private  int custid;
-    private String paymethod;
+    int custid;
+     String paymethod;
+    private String ID;
     
    
-    public Customer(int custid,String paymethod)
+    public Customer(int custid,String paymethod,String ID)
     {
         super("pavani", "movva", "address");
         this.custid=custid;
         this.paymethod=paymethod;
+        this.ID=ID;
+        
     }
     public void setcustid(int custid)
     {
@@ -39,8 +42,23 @@ public class Customer extends Person {
     {
         return paymethod;
     }
+    public String getID() {
+        return ID;
+    }
+
+    /**
+     * @param ID the ID to set
+     */
+    public void setID(String ID) {
+        this.ID = ID;
+    }
       public void display()
     {
     System.out.println("Customer ID: "+custid+"\n Payment: "+paymethod);
     }
+
+    /**
+     * @return the ID
+     */
+    
 }

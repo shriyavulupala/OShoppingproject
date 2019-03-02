@@ -10,9 +10,10 @@ package oshoppingproject;
  * @author 1893716
  */
 public class Brand {
-    String name;
+     String name;
     String id;
     String description;
+     String ID;
     /*
     public Brand(String name, String id,String description)
     {
@@ -57,6 +58,20 @@ public class Brand {
     
     public void display()
     {
-    System.out.println("Product Name: "+name+"\nProduct ID: "+id+"\nProduct Description: "+description);
+    System.out.println("Product Name: "+getName()+"\nProduct ID: "+id+"\nProduct Description: "+description);
+    }
+
+    /**
+     * @return the ID
+     */
+    public String getID() {
+        return ID;
+    }
+
+    /**
+     * @param ID the ID to set
+     */
+    public void setID(String ID) {
+        this.ID = ID;
     }
 }
