@@ -42,14 +42,6 @@ public class Customer extends Person {
     {
         return paymethod;
     }
-      public void display()
-    {
-    System.out.println("Customer ID: "+custid+"\n Payment: "+paymethod);
-    }
-
-    /**
-     * @return the ID
-     */
     public String getID() {
         return ID;
     }
@@ -60,4 +52,13 @@ public class Customer extends Person {
     public void setID(String ID) {
         this.ID = ID;
     }
+      public void display()
+    {
+    System.out.println("Customer ID: "+custid+"\n Payment: "+paymethod);
+    }
+
+    /**
+     * @return the ID
+     */
+    
 }
