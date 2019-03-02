@@ -29,7 +29,13 @@ public class Brand {
     {
         return name;
     }
+
+  
     
+    /**
+     *
+     * @param id
+     */
     public void setid(String id)
     {
         this.id=id;
