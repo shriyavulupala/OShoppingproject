@@ -15,7 +15,7 @@ public class Category
    
     int id;
     
-    public Category(int id, String name, String description)
+    public Category(int id,String name, String description)
     {
         this.id=id;
         this.name=name;
@@ -52,4 +52,8 @@ public class Category
     {
     System.out.println("Name: "+name+"\n CatID: "+id+"\n Description: "+description);
     }
+     public static String Category(int id,String name,String description)
+     {
+         return  name +" " +id+" " + description + " ";
+     }
 }
