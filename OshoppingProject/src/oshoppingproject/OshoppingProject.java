@@ -17,14 +17,14 @@ public class OshoppingProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Person p = new Person("pavani", "movva", "address");
+        Person p = new Person("pavani", "movva", "address","ID");
         Brand b = new Brand();
         Customer cu=new Customer(145,"dsf","ygygh");
         
          Date dt=new Date();
         String d=dt.toString();
         String id=generateid(d,cu.paymethod, cu.getID());
-        String id1=generateid(p.Fname,p.Lname,p.address);
+        
         
         
         System.out.println(id);
@@ -33,6 +33,7 @@ public class OshoppingProject {
         
         b.setDescription("Instant coffee maker");
        b.display();
+     p.display();
     }
  
 
@@ -60,9 +61,9 @@ public class OshoppingProject {
                  today='O';
             }
            
-        fname=fname;
+    
         char fn=fname.charAt(0);
-        lname=lname;
+   
         char ln=lname.charAt(0);
         id=year+"-"+month+"-"+today+"-"+fn+ln;
         return id;
