@@ -14,11 +14,11 @@ import java.util.Date;
  * @author 1895730
  */
 public class Order {
+        float amount;
     String paymethod;
-    float amount;
     private String ID;
     Date date = parseDate("2019-02-17");
-    public Order(String paymethod,float amount, String ID)
+    public Order(float amount,String paymethod, String ID)
     {
         this.paymethod=paymethod;
         this.amount=amount;
