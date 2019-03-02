@@ -20,6 +20,7 @@ public class OshoppingProject {
         Person p = new Person("pavani", "movva", "address","ID");
         Brand b = new Brand();
         Customer cu=new Customer(145,"dsf","ygygh");
+        Item i= new Item(23,40,4,"Kurta","Pink","game",10f);
         
          Date dt=new Date();
         String d=dt.toString();
@@ -34,6 +35,7 @@ public class OshoppingProject {
         b.setDescription("Instant coffee maker");
        b.display();
      p.display();
+     i.display();
     }
  
 
