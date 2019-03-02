@@ -56,4 +56,8 @@ public class Provider extends Person
     {
         System.out.println("company number: \n" +companynumber + "company name: \n" +companyname + "ID is:" +ID);
     }
+    public static String Provider(int c, String cname,String ID)
+{
+    return c+" "+cname+" "+ID;
+}
 }
