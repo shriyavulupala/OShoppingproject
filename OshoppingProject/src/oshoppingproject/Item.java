@@ -12,8 +12,18 @@ package oshoppingproject;
 public class Item 
 {
     int id, size, quantity;
-    String name, color;
+    String name, color,ID;
     float price;
+    public Item(int id, int size, int quantity, String name, String color ,String ID , float price)
+    {
+        this.id=id;
+        this.size=size;
+        this.quantity=quantity;
+        this.name=name;
+        this.color=color;
+        this.ID=ID;
+        this.price=price;
+    }
     
     public void setName(String n)
     {
@@ -33,11 +43,11 @@ public class Item
         return color;
     }
     
-    public void setId(int ID)
+    public void setId(int id)
     {
-        this.id=ID;
+        this.id=id;
     }
-    public int getID()
+    public int getid()
     {
      return id;   
     }
@@ -72,5 +82,11 @@ public class Item
     {
     System.out.println("Item ID: "+id+"\n Item size: "+size +"\n Item Quantity: "+quantity + "\n Item Name: " +name + "\n color:" +color+ "\n Price:" +price);
     }
-    
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+    public String getID()
+    {
+     return ID;   
+    }
 }
