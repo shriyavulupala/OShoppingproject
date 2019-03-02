@@ -10,10 +10,15 @@ package oshoppingproject;
  * @author 1895730
  */
 public class Customer extends Person {
+    
+   
   private  int custid;
     private String paymethod;
-    public void setcustid(int custid,String paymethod)
+    
+   
+    public Customer(int custid,String paymethod)
     {
+        super("pavani", "movva", "address");
         this.custid=custid;
         this.paymethod=paymethod;
     }
