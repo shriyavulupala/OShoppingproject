@@ -19,13 +19,13 @@ public class OshoppingProject {
         // TODO code application logic here
         Person p = new Person("pavani", "movva", "cotesaintecatherine","P");
         Brand b = new Brand("Biba", "B","Cotton");
-        Customer cu=new Customer(145,"dsf","ygygh");
+        
         Item i= new Item(23,40,4,"Kurta","Pink",800f);
             Category c= new Category(23, "clothing", "newfashion");
-            Order o= new Order(800f,"Credit card","O");
+         //   Order o= new Order(800f,"Credit card","O");
          Date dt=new Date();
         String d=dt.toString();
-        String id=generateid(d,cu.paymethod, cu.getID());
+       // String id=generateid(d,cu.paymethod, cu.getID());
         
         
         
@@ -34,7 +34,7 @@ public class OshoppingProject {
        i.display();
        b.display();
        c.display();
-       o.display();
+   //    o.display();
     }
  
 
