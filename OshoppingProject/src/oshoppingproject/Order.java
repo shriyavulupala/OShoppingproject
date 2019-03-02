@@ -48,6 +48,16 @@ public class Order {
     {
         return amount;
     }
+      public String getID() {
+        return ID;
+    }
+
+    /**
+     * @param ID the ID to set
+     */
+    public void setID(String ID) {
+        this.ID = ID;
+    }
       
      public static Date parseDate(String date) {
      try {
@@ -65,14 +75,5 @@ public class Order {
     /**
      * @return the ID
      */
-    public String getID() {
-        return ID;
-    }
-
-    /**
-     * @param ID the ID to set
-     */
-    public void setID(String ID) {
-        this.ID = ID;
-    }
+  
 }
