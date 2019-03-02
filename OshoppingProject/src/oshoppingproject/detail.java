@@ -11,8 +11,8 @@ package oshoppingproject;
  * @author 1893716
  */
 public class detail {
-    private String quantity;
-    private String ID;
+    String quantity;
+     String ID;
     public void setquantity(String quantity )
     {
         this.setQuantity(quantity);
