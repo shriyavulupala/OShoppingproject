@@ -51,7 +51,7 @@ public class Brand {
     
     public void display()
     {
-    System.out.println("Brand Name: "+getName()+"\n ID: "+id+"\n Description: "+description);
+    System.out.println("Brand Name: "+getName()+"\n BrandID: "+id+"\n Description: "+description);
     }
 
     /**
