@@ -19,14 +19,15 @@ public class OshoppingProject {
         // TODO code application logic here
         Person p = new Person("pavani", "movva", "address");
         Brand b = new Brand();
-        
+        Customer cu=new Customer(145,"dsf","ygygh");
         
          Date dt=new Date();
         String d=dt.toString();
-        String id=generateid(d,p.Fname,p.Lname);
+        String id=generateid(d,cu.paymethod,cu.ID);
         System.out.println(id);
         b.setName("Coffee Maker");
         b.setid("10f0D");
+        
         b.setDescription("Instant coffee maker");
        b.display();
     }
