@@ -10,10 +10,10 @@ package oshoppingproject;
  * @author 1893716
  */
 public class Brand {
-    private String name;
+     String name;
     String id;
     String description;
-    private String ID;
+     String ID;
     /*
     public Brand(String name, String id,String description)
     {
