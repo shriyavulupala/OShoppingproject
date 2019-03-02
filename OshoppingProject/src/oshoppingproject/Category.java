@@ -50,6 +50,6 @@ public class Category
     }
      public void display()
     {
-    System.out.println("Name: "+name+"\n ID: "+id+"\n Description: "+description);
+    System.out.println("Name: "+name+"\n CatID: "+id+"\n Description: "+description);
     }
 }
