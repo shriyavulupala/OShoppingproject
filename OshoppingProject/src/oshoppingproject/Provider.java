@@ -17,7 +17,7 @@ public class Provider extends Person
     
     public Provider(int c, String cname,String ID)
     {
-         super("pavani", "movva", "address");
+         super("pavani", "movva", "address","ID");
         this.companyname = cname;
         this.companynumber = c;
         this.ID=ID;
