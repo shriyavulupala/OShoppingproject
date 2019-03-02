@@ -13,6 +13,14 @@ public class Person
 {
     String Lname, Fname,address;
     int phone;
+    
+    public Person(String Lname, String Fname, String address)
+    {
+        this.Lname=Lname;
+        this.Fname=Fname;
+        this.address=address;
+        
+    }
 
     public void setFname(String Fname)
     {
