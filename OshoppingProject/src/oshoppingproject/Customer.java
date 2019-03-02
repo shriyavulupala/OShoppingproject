@@ -39,4 +39,8 @@ public class Customer extends Person {
     {
         return paymethod;
     }
+      public void display()
+    {
+    System.out.println("Customer ID: "+custid+"\n Payment: "+paymethod);
+    }
 }
