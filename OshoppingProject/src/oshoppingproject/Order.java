@@ -18,11 +18,12 @@ public class Order {
     String paymethod;
     private String ID;
     Date date = parseDate("2019-02-17");
-    public Order(float amount,String paymethod, String ID)
+    public static  String Order(float amount,String paymethod, String ID)
     {
-        this.paymethod=paymethod;
-        this.amount=amount;
-        this.ID=ID;
+//        paymethod=paymethod;
+//        this.amount=amount;
+//        this.ID=ID;
+        return amount+" "+paymethod+" "+ID;
     }
     public void setDate(Date d)
     {
