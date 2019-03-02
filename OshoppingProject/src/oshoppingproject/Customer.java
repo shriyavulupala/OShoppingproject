@@ -19,7 +19,7 @@ public class Customer extends Person {
    
     public Customer(int custid,String paymethod,String ID)
     {
-        super("pavani", "movva", "address");
+        super("pavani", "movva", "address","ID");
         this.custid=custid;
         this.paymethod=paymethod;
         this.ID=ID;
