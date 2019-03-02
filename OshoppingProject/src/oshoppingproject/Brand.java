@@ -13,14 +13,14 @@ public class Brand {
      String name;
     String id;
     String description;
-     String ID;
-    /*
+    
+    
     public Brand(String name, String id,String description)
     {
       this.name = name;
       this.id=id;
       this.description=description;
-    }*/
+    }
     
     public void setName(String n)
     {
@@ -30,13 +30,6 @@ public class Brand {
     {
         return name;
     }
-
-  
-    
-    /**
-     *
-     * @param id
-     */
     public void setid(String id)
     {
         this.id=id;
@@ -58,20 +51,11 @@ public class Brand {
     
     public void display()
     {
-    System.out.println("Product Name: "+getName()+"\nProduct ID: "+id+"\nProduct Description: "+description);
+    System.out.println("Brand Name: "+getName()+"\n ID: "+id+"\n Description: "+description);
     }
 
     /**
      * @return the ID
      */
-    public String getID() {
-        return ID;
-    }
-
-    /**
-     * @param ID the ID to set
-     */
-    public void setID(String ID) {
-        this.ID = ID;
-    }
+    
 }
