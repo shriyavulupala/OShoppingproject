@@ -23,7 +23,7 @@ public class OshoppingProject {
         
          Date dt=new Date();
         String d=dt.toString();
-        String id=generateid(d,cu.paymethod,cu.ID);
+        String id=generateid(d,cu.paymethod, cu.getID());
         System.out.println(id);
         b.setName("Coffee Maker");
         b.setid("10f0D");
