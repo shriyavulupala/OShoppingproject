@@ -9,13 +9,14 @@ package oshoppingproject;
  *
  * @author 1894475
  */
-public class Provider extends Customer
+public class Provider extends Person
 {
     int companynumber;
     String companyname;
     
     public Provider(int c, String cname)
     {
+         super("pavani", "movva", "address");
         this.companyname = cname;
         this.companynumber = c;
     }
