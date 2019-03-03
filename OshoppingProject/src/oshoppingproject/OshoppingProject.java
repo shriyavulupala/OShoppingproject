@@ -25,7 +25,7 @@ public class OshoppingProject {
            Order o= new Order(800f,"Credit card","O");
          Date dt=new Date();
         String d=dt.toString();
-        String id=generateid(d,cu.paymethod, cu.getID());
+        //String id=generateid(d,cu.paymethod, cu.getID());
        
                
        
