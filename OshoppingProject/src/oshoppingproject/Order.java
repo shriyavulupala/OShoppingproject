@@ -18,12 +18,13 @@ public class Order {
     String paymethod;
     private String ID;
     Date date = parseDate("2019-02-17");
-    public static  String Order(float amount,String paymethod, String ID)
+    public Order(float amount,String paymethod, String ID)
     {
-//        paymethod=paymethod;
-//        this.amount=amount;
-//        this.ID=ID;
-        return amount+" "+paymethod+" "+ID;
+       
+  this.amount=amount;
+  this.paymethod=paymethod;
+  this.ID=ID;
+    
     }
     public void setDate(Date d)
     {
@@ -72,7 +73,10 @@ public class Order {
     {
     System.out.println("Payment: " +paymethod +"\n Amount: "+amount);
     }
-
+public static String Ordertest(float amount,String paymethod,String ID)
+{
+    return amount+" "+paymethod+" "+ID;
+}
     /**
      * @return the ID
      */
