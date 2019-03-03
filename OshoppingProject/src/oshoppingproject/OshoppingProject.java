@@ -26,9 +26,8 @@ public class OshoppingProject {
          Date dt=new Date();
         String d=dt.toString();
         String id=generateid(d,cu.paymethod, cu.getID());
-         Brand b = new Brand("Biba","Cotton","dffa",new Date());
-                //  detail dtls = new detail("hggh","gfh",new Date());
-
+       
+               
        
         
         System.out.println(id);
