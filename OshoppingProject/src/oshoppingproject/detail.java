@@ -78,9 +78,9 @@ public class detail {
     public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
-public static String detailtest(Date dt,String id, String quantity)
+public static String detailtest(String Date,String id, String quantity)
 {
-    return dt+" "+id+" "+quantity;
+    return Date+" "+id+" "+quantity;
 }
     
     /**
