@@ -15,6 +15,7 @@ import java.util.Date;
 public class detail {
     String quantity;
     String newid;
+    Date dt;
     public detail(String id,String Quantity,Date dt){
         
              String d=dt.toString();
@@ -77,7 +78,11 @@ public class detail {
     public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
-
+public static String detailtest(Date dt,String id, String quantity)
+{
+    return dt+" "+id+" "+quantity;
+}
+    
     /**
      * @return the ID
      */
