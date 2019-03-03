@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Oshoppingproject;
+package oshoppingproject;
 
 import java.util.Date;
 
@@ -77,9 +77,10 @@ public class Brand {
 {
     return name+" "+ID+" "+description;
 }
+}
 
     /**
      * @return the ID
      */
    
-}
+
