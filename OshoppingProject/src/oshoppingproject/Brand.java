@@ -94,7 +94,10 @@ public class Brand {
     System.out.println("Brand Name: "+getName()+"\n BrandID: "+id+"\n Description: "+description);
     
     }
-
+public static String brandtest(String name,String date, String description , String ID)
+{
+    return name+" "+date+" "+description+" "+ID;
+}
     /**
      * @return the ID
      */
