@@ -41,12 +41,14 @@ public class detailtesting {
     //
      @Test
     public void brandtest(){
-         String name="sfdadsf";
-         String Qua;
+        
+         String quantity="23";
+         
          
          String Id="1893716";
-        String dt;
-         String expected =name+" "+Id+" "+dt+" "+description;
-         String real=oshoppingproject.Brand(name,Id,dt,descrition);
+        String Date="dt";
+         String expected=Date+" "+Id+" "+quantity;
+         String real=oshoppingproject.detail.detailtest(Date, Id, quantity);
          assertEquals(expected,real); // public void hello() {}
+}
 }
