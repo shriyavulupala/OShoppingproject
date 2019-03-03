@@ -27,10 +27,6 @@ public class Brand {
     
   
  
-public static String Brand(String name,  String ID, String description)
-{
-    return name+" "+ID+" "+description;
-}
 
     /**
      * @return the name
@@ -77,6 +73,11 @@ public static String Brand(String name,  String ID, String description)
     {
     System.out.println("name: "+id+" "+description);
     }
+    public static String Brand(String name,  String ID, String description)
+{
+    return name+" "+ID+" "+description;
+}
+
     /**
      * @return the ID
      */
