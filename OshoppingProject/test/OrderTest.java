@@ -42,11 +42,11 @@ public class OrderTest {
     //
      @Test
      public void Ordertest(){
-         String name="sfdadsf";
-         float num=20;
-         String Id="189956";
-         String expected =num+" "+name+" "+Id;
-         String real=Order.Order(num,name,Id);
+                 float amount=800;
+         String Id="1895730";
+         String paymethod="credit card";
+         String expected =amount+" "+paymethod+" "+Id;
+         String real=oshoppingproject.Order.Ordertest(amount, paymethod, Id);
          assertEquals(expected,real);
     // public void hello() {}
 }
