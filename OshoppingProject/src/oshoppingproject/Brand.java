@@ -5,6 +5,8 @@
  */
 package oshoppingproject;
 
+import java.util.Date;
+
 /**
  *
  * @author 1893716
@@ -12,16 +14,52 @@ package oshoppingproject;
 public class Brand {
      String name;
     String id;
+    String newid;
+    Date dt=new Date();
+
     String description;
     
     
-    public Brand(String name, String id,String description)
+    public Brand(String name, String id,String description,Date dt)
     {
       this.name = name;
+      this.dt=dt;
       this.id=id;
       this.description=description;
+       String d=dt.toString();
+      String br=generateid(d,id,name);
+      display(br);
     }
+
+   
+        public String generateid(String d,String fname,String lname)
+    { 
+        char today;
+        String[] datesplit=d.split(" ");
+        
+        String year=datesplit[5].substring(2,4);
+       
+        String month=datesplit[1].toUpperCase();
+        
+        String date=datesplit[2];
+        int currentdate=Integer.parseInt(date);
+       
+            if(currentdate%2==0)
+            {
+                 today='E';
+            }
+            else
+            {
+                 today='O';
+            }
+           
     
+        char fn=fname.charAt(0);
+   
+        char ln=lname.charAt(0);
+        newid=year+"-"+month+"-"+today+"-"+fn+ln;
+        return newid;
+    } 
     public void setName(String n)
     {
         this.name=n;
@@ -49,9 +87,12 @@ public class Brand {
         return description;
     }
     
-    public void display()
+    public void display(String br)
     {
+        System.out.println(br);
+                
     System.out.println("Brand Name: "+getName()+"\n BrandID: "+id+"\n Description: "+description);
+    
     }
 
     /**
