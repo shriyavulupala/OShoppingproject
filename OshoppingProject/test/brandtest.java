@@ -43,12 +43,12 @@ public class brandtest {
      @Test
       public void brandtest(){
          String name="sfdadsf";
-         String description=description;
+         String description="Cotton";
          
          String Id="1893716";
-        String dt;
-         String expected =name+" "+Id+" "+dt+" "+description;
-         String real=oshoppingproject.Brand(name,Id,dt,descrition);
+        String date="dt";
+         String expected =name+" "+Id+" "+date+" "+description;
+         String real=oshoppingproject.Brand.brandtest(name,Id,date,description);
          assertEquals(expected,real);
     // public void hello() {}
 }
