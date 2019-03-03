@@ -27,7 +27,7 @@ public class Brand {
     
   
  
-public static String brandtest(String name,  String ID, String description)
+public static String Brand(String name,  String ID, String description)
 {
     return name+" "+ID+" "+description;
 }
