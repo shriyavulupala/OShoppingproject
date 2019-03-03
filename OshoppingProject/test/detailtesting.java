@@ -10,15 +10,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import oshoppingproject.Order;
 
 /**
  *
- * @author 15148
+ * @author 1893716
  */
-public class brandtest {
+public class detailtesting {
     
-    public brandtest() {
+    public detailtesting() {
     }
     
     @BeforeClass
@@ -41,16 +40,13 @@ public class brandtest {
     // The methods must be annotated with annotation @Test. For example:
     //
      @Test
-      public void brandtest(){
+    public void brandtest(){
          String name="sfdadsf";
-         String description=description;
+         String Qua;
          
          String Id="1893716";
         String dt;
          String expected =name+" "+Id+" "+dt+" "+description;
          String real=oshoppingproject.Brand(name,Id,dt,descrition);
-         assertEquals(expected,real);
-    // public void hello() {}
-}
-    // public void hello() {}
+         assertEquals(expected,real); // public void hello() {}
 }
