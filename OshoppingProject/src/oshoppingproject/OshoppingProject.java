@@ -18,29 +18,29 @@ public class OshoppingProject {
     public static void main(String[] args) {
         // TODO code application logic here
         Person p = new Person("pavani", "movva", "cotesaintecatherine","P");
-      //  Brand b = new Brand("Biba", "B","Cotton");
+      Brand b = new Brand("Biba", "B","Cotton");
         
         Item i= new Item(23,40,4,"Kurta","Pink",800f);
-            Category c= new Category(23, "clothing", "newfashion");
-         //   Order o= new Order(800f,"Credit card","O");
+            Category cu= new Category(23, "clothing", "newfashion");
+           Order o= new Order(800f,"Credit card","O");
          Date dt=new Date();
         String d=dt.toString();
-       // String id=generateid(d,cu.paymethod, cu.getID());
+        String id=generateid(d,cu.paymethod, cu.getID());
          Brand b = new Brand("Biba","Cotton","dffa",new Date());
-                  detail dtls = new detail("hggh","gfh",new Date());
+                //  detail dtls = new detail("hggh","gfh",new Date());
 
-       /* 
+       
         
         System.out.println(id);
        p.display();
        i.display();
-     //  b.display();
-       c.display();
-   //    o.display();
+      b.display();
+       cu.display();
+      o.display();
     }
  
-*/
-   /*
+
+  
   
     static String id;
     public static String generateid(String d,String fname,String lname)
@@ -71,11 +71,11 @@ public class OshoppingProject {
         id=year+"-"+month+"-"+today+"-"+fn+ln;
         return id;
     } 
-*/
+
  
        
 
     
 
 }
-}
+
