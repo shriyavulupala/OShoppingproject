@@ -1,7 +1,5 @@
 package oshoppingproject;
 
-import java.util.Date;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,57 +11,25 @@ import java.util.Date;
  * @author 1893716
  */
 public class detail {
-    String quantity;
-    String newid;
-    Date dt;
-    public detail(String id,String Quantity,Date dt){
-        
-             String d=dt.toString();
-      String dtl=generateid(d,"id","Quantity");
-      display(dtl);
-    }
-      public String generateid(String d,String fname,String lname)
-    { 
-        char today;
-        String[] datesplit=d.split(" ");
-        
-        String year=datesplit[5].substring(2,4);
-       
-        String month=datesplit[1].toUpperCase();
-        
-        String date=datesplit[2];
-        int currentdate=Integer.parseInt(date);
-       
-            if(currentdate%2==0)
-            {
-                 today='E';
-            }
-            else
-            {
-                 today='O';
-            }
-           
+    private String quantity;
+     private String ID;
+     public detail(String quantity,String ID)
+     {
+         this.quantity=quantity;
+         this.ID=ID;
+     }
     
-        char fn=fname.charAt(0);
-   
-        char ln=lname.charAt(0);
-        newid=year+"-"+month+"-"+today+"-"+fn+ln;
-        return newid;
-    } 
-    public void setquantity(String quantity )
-    {
-        this.setQuantity(quantity);
-    }
-    public String getquantity(){
-        return getQuantity();
-        
-    }
              
-    public void display(String dtl){
-                System.out.println(dtl);
+    
+    /**
+     * @return the quantity
+     */
+  
 
-        System.out.println("quantity detail: "+ getQuantity());
-    }
+public static String detailtest(String Date,String id, String quantity)
+{
+    return Date+" "+id+" "+quantity;
+}
 
     /**
      * @return the quantity
@@ -78,13 +44,23 @@ public class detail {
     public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
-public static String detailtest(String Date,String id, String quantity)
-{
-    return Date+" "+id+" "+quantity;
-}
-    
+
     /**
      * @return the ID
      */
-  
+    public String getID() {
+        return ID;
+    }
+
+    /**
+     * @param ID the ID to set
+     */
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+    
+    public void display(){
+        System.out.println("quantity detail: "+ getQuantity());
+    }
+
 }
